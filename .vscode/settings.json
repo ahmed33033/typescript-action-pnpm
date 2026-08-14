@@ -10,6 +10,9 @@
     }
   ],
   "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
-    { "text": "Always include a list of key changes." }
-  ]
+    {
+      "text": "Always include a list of key changes."
+    }
+  ],
+  "prettier.configPath": "./.prettierrc.yml"
 }
