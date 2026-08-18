@@ -1,23 +1,21 @@
 # Create a GitHub Action Using TypeScript
 
-![Linter](https://github.com/actions/typescript-action/actions/workflows/linter.yml/badge.svg)
-![CI](https://github.com/actions/typescript-action/actions/workflows/ci.yml/badge.svg)
-![Check dist/](https://github.com/actions/typescript-action/actions/workflows/check-dist.yml/badge.svg)
-![CodeQL](https://github.com/actions/typescript-action/actions/workflows/codeql-analysis.yml/badge.svg)
+![Linter](https://github.com/ahmed33033/typescript-action/actions/workflows/linter.yml/badge.svg)
+![CI](https://github.com/ahmed33033/typescript-action/actions/workflows/ci.yml/badge.svg)
+![Check dist/](https://github.com/ahmed33033/typescript-action/actions/workflows/check-dist.yml/badge.svg)
+![CodeQL](https://github.com/ahmed33033/typescript-action/actions/workflows/codeql-analysis.yml/badge.svg)
 ![Coverage](./badges/coverage.svg)
 
-> [!NOTE] This is an updated fork of Github's Typescript Action template. It
-> updates the following:
+> [!NOTE]
+> This is an updated fork of Github's Typescript Action template. It updates the following:
 >
 > - Changes project's package manager from npm to **pnpm**, for speed.
 > - Changes project's testing framework from jest to **vitest** for jest-like
 >   syntax with built-in typescript support.
-> - Updates eslint.config.ts to use native **flat config** syntax, with detailed
->   comments.
+> - Updates eslint.config.ts to use native **flat config** syntax, with detailed comments.
 > - Updated project dependencies.
-> - Updates configuration files like tsconfig.ts to match updated dependencies.
-> - Renamed `local-action` script to `local-gha` (gha for github action) to
->   avoid conflict with dependency name.
+> - Updates configuration files like tsconfig.ts and action workflows to match updated dependencies.
+> - Renamed `local-action` script to `local-gha` (gha for github action) to avoid conflict with dependency name.
 
 Use this template to bootstrap the creation of a TypeScript action. :rocket:
 
