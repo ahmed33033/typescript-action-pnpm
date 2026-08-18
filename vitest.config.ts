@@ -24,6 +24,6 @@ export default defineConfig({
     reporters: ['verbose', 'github-actions'],
     environment: 'node',
     include: ['**/*.test.ts'],
-    exclude: ['dist/**', '/node_modules/**']
+    exclude: ['dist/**', 'node_modules/**']
   }
 })

@@ -2,6 +2,7 @@
  * Unit tests for src/wait.ts
  */
 import { wait } from '../src/wait.js'
+import { describe, it, expect } from 'vitest'
 
 describe('wait.ts', () => {
   it('Throws an invalid number', async () => {

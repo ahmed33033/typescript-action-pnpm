@@ -52,6 +52,7 @@
     "@types/node": "^25.2.3",
     "@typescript-eslint/eslint-plugin": "^8.56.0",
     "@typescript-eslint/parser": "^8.67.0",
+    "@vitest/coverage-v8": "4.1.10",
     "@vitest/eslint-plugin": "^1.6.27",
     "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
