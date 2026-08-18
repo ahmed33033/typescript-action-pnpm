@@ -33,7 +33,7 @@
     "package": "pnpm rimraf ./dist && pnpm rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "package:watch": "pnpm run package -- --watch",
     "test": "NODE_NO_WARNINGS=1 pnpm vitest",
-    "all": "pnpm run format:write && pnpm run lint && pnpm run test && pnpm run coverage && pnpm run package"
+    "all": "pnpm run format:write && pnpm run lint && pnpm vitest run && pnpm run coverage && pnpm run package"
   },
   "license": "MIT",
   "dependencies": {
