@@ -19,30 +19,27 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
 
-      - name: Setup Node.js
-        id: setup-node
-        uses: actions/setup-node@v6
+      - name: Setup PNPM and Install Deps
+        id: setup-pnpm
+        uses: pnpm/setup@v2.0.2
         with:
-          node-version-file: .node-version
-          cache: npm
-
-      - name: Install Dependencies
-        id: npm-ci
-        run: npm ci
+          cache: true
+          version: 11
+          runtime: node@24
 
       - name: Check Format
-        id: npm-format-check
-        run: npm run format:check
+        id: pnpm-format-check
+        run: pnpm format:check
 
       - name: Lint
-        id: npm-lint
-        run: npm run lint
+        id: pnpm-lint
+        run: pnpm lint
 
       - name: Test
-        id: npm-ci-test
-        run: npm run ci-test
+        id: pnpm-ci-test
+        run: pnpm ci-test
 
   test-action:
     name: GitHub Actions Test
@@ -51,7 +48,7 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
 
       - name: Test Local Action
         id: test-action
