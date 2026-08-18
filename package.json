@@ -24,7 +24,7 @@
   },
   "scripts": {
     "bundle": "pnpm run format:write && pnpm run package",
-    "ci-test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 pnpm jest",
+    "ci-test": "NODE_NO_WARNINGS=1 pnpm vitest",
     "coverage": "pnpm make-coverage-badge --output-path ./badges/coverage.svg",
     "format:write": "pnpm prettier --write .",
     "format:check": "pnpm prettier --check .",
@@ -32,7 +32,7 @@
     "local-action": "pnpm @github/local-action . src/main.ts .env",
     "package": "pnpm rimraf ./dist && pnpm rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "package:watch": "pnpm run package -- --watch",
-    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 pnpm jest",
+    "test": "NODE_NO_WARNINGS=1 pnpm vitest",
     "all": "pnpm run format:write && pnpm run lint && pnpm run test && pnpm run coverage && pnpm run package"
   },
   "license": "MIT",
@@ -64,7 +64,8 @@
     "ts-jest": "^29.4.6",
     "ts-jest-resolver": "^2.0.1",
     "tsx": "^4.23.12",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "*"
