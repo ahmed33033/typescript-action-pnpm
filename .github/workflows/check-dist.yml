@@ -40,7 +40,7 @@ jobs:
 
       - name: Remove dist/ Directory
         id: remove-dist
-        run: pnpm rimraf ./dist
+        run: rm -rf ./dist
 
       - name: Install Dependencies
         id: install

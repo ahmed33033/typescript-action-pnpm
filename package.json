@@ -30,7 +30,7 @@
     "format:check": "pnpm prettier --check .",
     "lint": "pnpm eslint .",
     "local-gha": "pnpm local-action . src/main.ts .env",
-    "package": "pnpm rimraf ./dist && pnpm rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "package": "rm -rf ./dist && pnpm rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "package:watch": "pnpm run package -- --watch",
     "test": "NODE_NO_WARNINGS=1 pnpm vitest",
     "all": "pnpm run format:write && pnpm run lint && pnpm vitest run && pnpm run coverage && pnpm run package"
